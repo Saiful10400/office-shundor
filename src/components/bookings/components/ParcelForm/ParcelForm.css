@@ -1,0 +1,44 @@
+.preset-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(10rem, 100%), 1fr));
+    gap: 1em;
+}
+
+.preset-container {
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    transition: border-color 0.2s ease;
+}
+
+.preset-container.selected {
+    border-color: blue;
+}
+
+.input-border{
+    border: 2px solid rgba(0, 0, 0, 0.3);
+    padding: 0.3em;
+    width: 9em;
+}
+
+.prohibited-btn{
+    color: rgb(255, 147, 48);
+}
+
+@media only screen and (max-width: 836px) {
+    .radio-container{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .dimension-wrapper{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 639px) {
+    .input-border{
+        width: 100%;
+        padding: 0.5em;
+        margin: 0 auto;
+    }
+}

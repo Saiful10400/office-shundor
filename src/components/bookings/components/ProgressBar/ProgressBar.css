@@ -1,0 +1,59 @@
+/* ProgressBar.css */
+.progress-bar-container {
+    width: min(90%, 100%);
+    margin-bottom: 1rem;
+    position: relative;
+    margin: 0 auto;
+}
+
+.step-info {
+    position: relative;
+    height: 50px; /* Adjust height as needed */
+    margin-bottom: 0.5rem;
+    top: 34px;
+
+}
+
+.step-item {
+    position: absolute;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #E6E6E6;
+    color: black;
+    margin-bottom: 0.25rem;
+    transition: 0.3s ease;
+}
+
+.step-number.active-number {
+    /* background-color: #bf5e1b; */
+    /* color: white; */
+    background-image: radial-gradient(circle, #E67E22, #C8102E);
+}
+
+.step-label {
+    font-size: 0.875rem;
+}
+
+.progress-bar-background {
+    background-color: #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 1.5px;
+}
+
+.progress-bar {
+    height: 100%;
+    /* background-color: #080808; */
+    background-image: linear-gradient(to right,#E67E22,#C8102E);
+    width: 0;
+    transition: width 0.3s ease;
+}

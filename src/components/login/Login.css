@@ -1,0 +1,100 @@
+.loginCard {
+  /*background-color: #cee0e0;
+      border-radius: 10px;
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
+      -o-border-radius: 10px;
+      box-shadow: 0 20px 30px rgba(0, 0, 0, .2);
+      */
+  left: 50%;
+  padding: 10px;
+  position: absolute;
+  top: 1;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 23rem;
+  z-index: 9999;
+  background: rgba(255, 255, 255, 0.25);
+  /* backdrop-filter: blur(1px); */
+  /*border: 4px solid rgba(255, 255, 255, 0.18);
+      */
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.loginCard input#outlined-multiline-static {
+  background: white;
+  border-radius: 6px;
+  border: none;
+  outline: none;
+}
+
+.loginCard fieldset.MuiOutlinedInput-notchedOutline {
+  border-color: black !important;
+}
+
+.loginCard label#outlined-multiline-static-label.Mui-focused {
+  color: black !important;
+}
+
+.image-container{
+  width: min(140rem, 100%);
+  height: 100dvh;
+  overflow: hidden;
+}
+
+.image-container > img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.form-container{
+  background-color: rgb(30, 30, 43);
+  color: white;
+  height: 100dvh;
+  width: min(50rem, 100%);
+  /* width: 100%; */
+}
+
+.form-container form{
+  width: min(24rem, 100%);
+  margin: 0 auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.form-container form input{
+  width: 100%;
+}
+
+.form-container form input[type="text"],
+.form-container form input[type="password"],
+.form-container form input[type="email"]{
+  background-color: rgb(42, 42, 60);
+  border: none;
+  outline: none;
+  padding: 0.5em;
+}
+
+.password-field{
+  background-color: rgb(42, 42, 60);
+  padding-right: 0.3em;
+}
+
+.form-container form input[type="submit"]{
+  border: 2px solid rgb(45, 45, 223);
+  border-radius: 2em;
+  cursor: pointer;
+  padding: 0.7em 0;
+  box-shadow: inset 0px 12px 20px -12px rgb(45, 45, 223);
+}
+
+@media only screen and (max-width: 815px) {
+  .image-container{
+    display: none;
+  }
+}

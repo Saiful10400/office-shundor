@@ -1,0 +1,39 @@
+.charge-warning{
+    border: 2px solid rgb(255, 147, 48);
+    width: max-content;
+}
+
+.bg-orange{
+    background-color: rgb(255, 147, 48);
+}
+
+.color-orange{
+    color: rgb(255, 147, 48);
+}
+
+.range-container{
+    width: 100%;
+}
+
+.range-wrapper{
+    width: min(500px, 100%);
+}
+
+.glass-morphism-overlay{
+background: rgba(255, 255, 255, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.1px);
+-webkit-backdrop-filter: blur(2.1px);
+}
+
+@media only screen and (max-width: 811px) {
+    .range-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .range-title{
+        text-align: center;
+    }
+}

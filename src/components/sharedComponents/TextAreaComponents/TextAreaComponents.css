@@ -1,0 +1,56 @@
+.custom-textField {
+    padding: 0px;
+    background: #e7eaf3;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.custom-textField label#outlined-basic-label.Mui-focused {
+    color: #b5b7c4 !important;
+    margin-top: 8px;
+}
+
+.custom-textField label#outlined-basic-label {
+    color: #b5b7c4 !important;
+    margin-top: 8px;
+}
+
+.selectedTextBox label#outlined-basic-label.Mui-focused {
+    color: #b5b7c4 !important;
+    margin-top: 8px !important;
+}
+
+.selectedTextBox label#outlined-basic-label {
+    color: #b5b7c4 !important;
+    margin-top: 8px !important;
+}
+
+.custom-textField input#outlined-basic {
+    margin-top: 9px;
+    color: #4f5261;
+    font-weight: 800;
+}
+
+.custom-textField fieldset.MuiOutlinedInput-notchedOutline {
+    border-radius: 5px !important;
+    border: 0;
+    -webkit-border-radius: 5px !important;
+    -moz-border-radius: 5px !important;
+    -ms-border-radius: 5px !important;
+    -o-border-radius: 5px !important;
+}
+
+.custom-textArea label {
+    color: #b5b7c4 !important;
+    margin-top: 8px !important;
+}
+
+.custom-textArea textarea {
+    margin-top: 9px;
+    color: #4f5261;
+    font-weight: 800;
+}

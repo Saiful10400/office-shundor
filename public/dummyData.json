@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "date": {
+            "day": 23,
+            "month": "January"
+        },
+        "data": [
+            {
+                "date": {
+                    "month": "December",
+                    "day": 12,
+                    "dayName": "Sunday"
+                },
+                "discountRate": 134.54,
+                "transportationCharge": 56.32
+            }
+        ]
+    }
+]

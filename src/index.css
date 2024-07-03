@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root{
+    --accent-blue: 52, 52, 223;
+    --accent-orange: 255, 147, 48;
+}

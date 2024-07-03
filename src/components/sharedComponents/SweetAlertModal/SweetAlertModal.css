@@ -1,0 +1,88 @@
+.custom-ui {
+  text-align: center;
+  width: 35rem;
+  padding: 40px;
+  background: white;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+  color: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  z-index: 3 !important;
+}
+
+.custom-ui-Data {
+  text-align: center;
+  width: 35rem;
+  padding: 40px;
+  box-shadow: 0 20px 75px rgba(0, 0, 0, 0.23);
+  color: black;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  z-index: 3 !important;
+}
+
+.react-confirm-alert {
+  z-index: 6;
+}
+
+.MuiDialog-container {
+  z-index: 2 !important;
+}
+
+.btn-common {
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.btn-yes-sweetALert {
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #2ecc71;
+  margin: 10px;
+  cursor: pointer;
+  background: none;
+  color: #2ecc71;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+
+.btn-yes-sweetALert:hover {
+  border: 1px solid #fff;
+  background: #2ecc71;
+  color: white;
+}
+
+.btn-no-sweetALert {
+  width: 160px;
+  padding: 10px;
+  border: 1px solid #e74c3c;
+  margin: 10px;
+  cursor: pointer;
+  background: none;
+  color: #e74c3c;
+  transition: 0.3s all ease-in-out;
+  -webkit-transition: 0.3s all ease-in-out;
+  -moz-transition: 0.3s all ease-in-out;
+  -ms-transition: 0.3s all ease-in-out;
+  -o-transition: 0.3s all ease-in-out;
+}
+
+.btn-no-sweetALert:hover {
+  border: 1px solid #fff;
+  background: #e74c3c;
+  color: white;
+}
