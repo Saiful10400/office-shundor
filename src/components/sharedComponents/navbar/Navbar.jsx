@@ -27,15 +27,15 @@ const Navbar = () => {
     return (
         <div className="lg:w-full mx-auto sticky top-0 left-0 z-10 text-white lg:left-0">
             
-            <div className="flex justify-center relative h-[80px] items-end p-[17px]  text-white lg:left-0 lg:w-full lg:px-20 mx-auto bg-gradient-to-r from-[#E67E22] to-[#C8102E]">
+            <div className="flex justify-center relative h-[110px] items-end p-[17px]  text-white lg:left-0 lg:w-full lg:px-20 mx-auto bg-gradient-to-r from-[#E67E22] to-[#C8102E]">
                 <button className='absolute top-3 right-5 text-white font-bold text-[20px]'>Login</button>
                 {/* nav bar for desktop */}
                <div className='w-full'>
-                <ul className='flex justify-center text-[20px] font-medium items-center gap-x-2'>{navLinksLeft}</ul>
+                <ul className='flex justify-center text-[20px] font-normal items-center'>{navLinksLeft}</ul>
                </div>
-               <img className='rounded-full absolute left-[calc(50%-100px)] top-[13px] w-[100px] h-[100px]' src={logo} alt="logo" />
+               <img className='rounded-full absolute left-[calc(52%-100px)] top-[20px] w-[130px] h-[130px]' src={logo} alt="logo" />
                <div className='w-full'>
-                <ul className='flex justify-center text-[20px] font-medium items-center gap-x-2'>{navLinksRight}</ul>
+                <ul className='flex justify-center text-[20px] font-normal items-center'>{navLinksRight}</ul>
                </div>
                
             </div>

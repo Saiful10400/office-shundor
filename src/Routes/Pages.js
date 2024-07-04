@@ -7,6 +7,10 @@ import Dashboard from "../components/Dashboard/Dashboard";
 import Home from "../components/home/Home";
 import MainLayout from "../components/layout/MainLayout";
 import Bookings from "../components/bookings/Bookings";
+import AgencyDashboard from "../components/Dashboard/UserDashboard/AgencyDashboard";
+import Subroot from "../components/Dashboard/UserDashboard/subComponenets/Subroot";
+
+
 
 function Pages(props) {
   return (
@@ -17,6 +21,9 @@ function Pages(props) {
       <Route path="/" element={<MainLayout />}>
         <Route index element={<Home />} />
         <Route path={"/bookings"} element={<Bookings />} />
+        <Route path="/dashboard" element={<AgencyDashboard/>}>
+        <Route path="" element={<Subroot></Subroot>}></Route>
+        </Route>
       </Route>
 
       <Route path={"/signup"} element={<Signup />} />
