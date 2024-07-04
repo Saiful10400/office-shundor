@@ -29,7 +29,7 @@ const ShippingInformation = ({
     // const currentIdData = arrivalDateInfo.find(item => item.id === id)
     // setcurrentTabData(currentIdData)
   };
-  console.log(arrivalDateInfo);
+
 
   return (
     <FormWrapper title={"Shipping Information"}>
@@ -46,7 +46,7 @@ const ShippingInformation = ({
                     cargoType === item
                       ? "text-white bg-[#E57C22]"
                       : "text-[#E57C22] bg-transparent"
-                  } font-normal border rounded-lg text-2xl px-3 py-1 border-[#E57C22]`}
+                  } font-normal border rounded-lg text-xl px-3 py-1 border-[#E57C22]`}
                   key={idx}
                 >
                   {item}
@@ -102,21 +102,21 @@ const ShippingInformation = ({
               </button>
               <button
                 type="button"
-                onClick={() => updateFields({ shipmentType: "Faster" })}
+                onClick={() => updateFields({ shipmentType: "Express" })}
                 className={`w-full shadow-xl h-[56px] ${
-                  shipmentType === "Faster"
+                  shipmentType === "Express"
                     ? "bg-[#E57C22] text-white font-semibold"
                     : "bg-white"
                 }`}
               >
-                Faster
+                Express
               </button>
 
               {/* end. */}
             </div>
             <div className="  grid-cols-1 gap-y-3 py-8 px-6 ">
                   <div className="flex justify-center gap-x-96 items-center px-4 py-2 rounded-lg bg-white border h-[282px] shadow-2xl relative">
-                    <span className="absolute top-[20px] left-0 px-3 py-1 bg-[#1ABC9C] text-white rounded-r-md">Express</span>
+                    <span className="absolute top-[20px] left-0 px-3 py-1 bg-[#1ABC9C] text-white rounded-r-md">Fastest</span>
                     <div className="flex flex-col justify-center items-center">
                       <span className="font-normal text-[40px] ">{"May"}</span>
                       <span className="font-bold text-[55px]">{18}</span>

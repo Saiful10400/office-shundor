@@ -14,28 +14,28 @@ const Navbar = () => {
         <li className='font-semibold text-base hover:underline'><Link to="/bookings">Bookings</Link></li>
     </>
     const navLinksRight=<>
-    <li className='font-semibold mr-12 hover:underline'><Link to={""}>Sectors</Link></li>
-    <li className='font-semibold mr-12 hover:underline'><Link to={"/bookings"}>Booking</Link></li>
-    <li className='font-semibold mr-12 hover:underline'><Link to={""}>Contact Us</Link></li>
+    <li className=' mr-12 hover:underline'><Link to={""}>Sectors</Link></li>
+    <li className=' mr-12 hover:underline'><Link to={"/bookings"}>Booking</Link></li>
+    <li className=' mr-12 hover:underline'><Link to={""}>Contact Us</Link></li>
     </>
     const navLinksLeft=<>
-    <li className='font-semibold mr-12 hover:underline'><Link to={"/"}>Home</Link></li>
-    <li className='font-semibold mr-12 hover:underline'><Link to={""}>News</Link></li>
-    <li className='font-semibold mr-12 hover:underline'><Link to={""}>Order</Link></li>
+    <li className=' mr-12 hover:underline'><Link to={"/"}>Home</Link></li>
+    <li className=' mr-12 hover:underline'><Link to={""}>News</Link></li>
+    <li className=' mr-12 hover:underline'><Link to={""}>Order</Link></li>
     </>
 
     return (
         <div className="lg:w-full mx-auto sticky top-0 left-0 z-10 text-white lg:left-0">
             
-            <div className="flex justify-center relative h-[150px] items-end p-[17px]  text-white lg:left-0 lg:w-full lg:px-20 mx-auto bg-gradient-to-r from-[#E67E22] to-[#C8102E]">
+            <div className="flex justify-center relative h-[80px] items-end p-[17px]  text-white lg:left-0 lg:w-full lg:px-20 mx-auto bg-gradient-to-r from-[#E67E22] to-[#C8102E]">
                 <button className='absolute top-3 right-5 text-white font-bold text-[20px]'>Login</button>
                 {/* nav bar for desktop */}
                <div className='w-full'>
-                <ul className='flex justify-center text-[24px] font-semibold items-center gap-x-11'>{navLinksLeft}</ul>
+                <ul className='flex justify-center text-[20px] font-medium items-center gap-x-2'>{navLinksLeft}</ul>
                </div>
-               <img className='rounded-full absolute left-[calc(50%-100px)] top-[13px] w-[200px] h-[200px]' src={logo} alt="logo" />
+               <img className='rounded-full absolute left-[calc(50%-100px)] top-[13px] w-[100px] h-[100px]' src={logo} alt="logo" />
                <div className='w-full'>
-                <ul className='flex text-[24px] font-semibold justify-center items-center gap-x-11'>{navLinksRight}</ul>
+                <ul className='flex justify-center text-[20px] font-medium items-center gap-x-2'>{navLinksRight}</ul>
                </div>
                
             </div>

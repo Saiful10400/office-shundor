@@ -11,6 +11,7 @@ import { IoClose } from "react-icons/io5";
 import { toast } from "react-toastify";
 import DropDown from "../../Shared_components/DropDown";
 import Input from "../../Shared_components/TextArea";
+import TextArea from "../../Shared_components/TextArea";
 
 const ParcelForm = ({
   productType,
@@ -246,9 +247,7 @@ const ParcelForm = ({
 
           <inputField
             required={true}
-            valueUpdate={(e) =>
-                updateFields({ productValue: e.target.value })
-            }
+            valueUpdate={(e) => updateFields({ productValue: e.target.value })}
             type={"text"}
             placeHolder={"Product Value"}
             alltimeValue={productValue}
@@ -475,14 +474,21 @@ const ParcelForm = ({
         </h1>
 
         <div className="sender-form-container mt-18 mb-10">
-          <textarea
+          {/* <textarea
             cols={4}
             row={4}
             placeholder="Additional information about product"
             value={additionalInfo}
             onChange={(e) => updateFields({ additionalInfo: e.target.value })}
             className="w-full border-0 outline-none rounded-lg"
-          ></textarea>
+          ></textarea> */}
+
+          <TextArea
+            required={true}
+            valueUpdate={(e) => updateFields({ additionalInfo: e.target.value })}
+            placeHolder={"Additional information about product"}
+            alltimeValue={additionalInfo}
+          />
         </div>
       </FormWrapper>
     </>

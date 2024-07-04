@@ -11,6 +11,7 @@ import { toast } from "react-toastify";
 import DropDown from "../../Shared_components/DropDown";
 import Input from "../../Shared_components/TextArea";
 import InputField from "../../Shared_components/InputField";
+import TextArea from "../../Shared_components/TextArea";
 
 // Function to format the slider value as time
 const formatTime = (value) => {
@@ -419,7 +420,7 @@ const PickupForm = ({
               </label>
 
               <div className="sender-form-container mt-5">
-                <textarea
+                {/* <textarea
                   cols={4}
                   row={4}
                   placeholder="Instructions"
@@ -428,7 +429,15 @@ const PickupForm = ({
                     updateFields({ pickupInstructions: e.target.value })
                   }
                   className="w-full border-none outline-none rounded-lg"
-                ></textarea>
+                ></textarea> */}
+                <TextArea
+                  required={true}
+                  valueUpdate={(e) =>
+                    updateFields({ pickupInstructions: e.target.value })
+                  }
+                  placeHolder={"Instructions"}
+                  alltimeValue={pickupInstructions}
+                />
               </div>
             </div>
 

@@ -3,6 +3,7 @@ import FormWrapper from "../FormWrapper/FormWrapper";
 import Input from "../../Shared_components/TextArea";
 import DropDown from "../../Shared_components/DropDown";
 import InputField from "../../Shared_components/InputField";
+import TextArea from "../../Shared_components/TextArea";
 
 const ReceiverForm = ({
   receiverName,
@@ -152,14 +153,20 @@ const ReceiverForm = ({
       </div>
 
       <div className="sender-form-container mt-20 mb-16">
-        <textarea
+        {/* <textarea
           cols={10}
           row={4}
           placeholder="Receiver Additional Address Information"
           value={receiverAddress}
           onChange={(e) => updateFields({ receiverAddress: e.target.value })}
           className="w-full border-0 outline-none rounded-lg"
-        ></textarea>
+        ></textarea> */}
+        <TextArea
+          required={true}
+          valueUpdate={(e) => updateFields({ receiverAddress: e.target.value })}
+          placeHolder={"Receiver Additional Address Information"}
+          alltimeValue={receiverAddress}
+        />
       </div>
     </FormWrapper>
   );
