@@ -53,6 +53,7 @@ const Bookings = () => {
     productHeight: "",
     paymentType: "",
     productGroup: "",
+    shipmentType: "",
     IsScheduled: "",
     scheduledDate: {},
     pickupLocation: "",
@@ -221,9 +222,9 @@ const Bookings = () => {
   ];
 
   return (
-    <div className="py-[70px] bookingContainer min-h-screen flex justify-center items-center">
+    <div className="py-[70px] bookingContainer min-h-screen flex flex-col gap-11 justify-center items-center">
       <ToastContainer />
-
+      <h1 className="text-[36px] font-semibold pageTittle px-4">Booking</h1>
       <div className="multiform-container px-9 bg-white shadow-2xl  rounded-xl">
         <form onSubmit={onSubmit} className="pt-[200px] pb-[50px]  relative">
           <div className="absolute top-[90px]  left-0 w-full">
@@ -236,8 +237,8 @@ const Bookings = () => {
           </div>
           {/* step page container part. */}
 
-          <div className=" lg:min-h-[30px]  flex justify-center items-center">
-          {step}
+          <div className=" lg:min-h-[300px]  flex justify-center items-center">
+            {step}
           </div>
 
           {/* button part. */}
