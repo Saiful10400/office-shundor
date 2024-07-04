@@ -6,7 +6,7 @@ import { LuLayoutDashboard } from "react-icons/lu";
 import { IoTicket } from "react-icons/io5";
 const AsideNav = () => {
     return (
-        <div className='w-[14%]  bg-[#3E425B] min-h-[85vh] pt-[100px] text-white rounded-[50px]'>
+        <div className='w-[14%] sticky top-[125px]  bg-[#3E425B] min-h-[85vh] pt-[100px] text-white rounded-[50px]'>
             
              {/* top image and profile text info. */}
              <div className='relative  flex justify-center items-center flex-col'>
@@ -20,7 +20,7 @@ const AsideNav = () => {
              {/* aside nav bar */}
              <ul className='text-black font-bold text-[20px]  flex items-center justify-center flex-col gap-5 mt-24'>
                 <li><NavLink className="flex items-center gap-x-1" to={""}><LuLayoutDashboard />Dashboard</NavLink></li>
-                <li><NavLink className="flex items-center gap-x-1"  to={"add"}><IoTicket />Add Booking</NavLink></li>
+                {/* <li><NavLink className="flex items-center gap-x-1"  to={"add"}><IoTicket />Add Booking</NavLink></li> */}
              </ul>
         </div>
     );

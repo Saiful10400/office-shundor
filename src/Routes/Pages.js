@@ -9,6 +9,8 @@ import MainLayout from "../components/layout/MainLayout";
 import Bookings from "../components/bookings/Bookings";
 import AgencyDashboard from "../components/Dashboard/UserDashboard/AgencyDashboard";
 import Subroot from "../components/Dashboard/UserDashboard/subComponenets/Subroot";
+import UserDashboard from "../components/Dashboard/UserDashboard/UserDashboard";
+import UserSubRoot from "../components/Dashboard/UserDashboard/UserComponent/UserSubRoot";
 
 
 
@@ -23,6 +25,9 @@ function Pages(props) {
         <Route path={"/bookings"} element={<Bookings />} />
         <Route path="/dashboard" element={<AgencyDashboard/>}>
         <Route path="" element={<Subroot></Subroot>}></Route>
+        </Route>
+        <Route path="/user-dashboard" element={<UserDashboard/>}>
+        <Route path="" element={<UserSubRoot/>}></Route>
         </Route>
       </Route>
 

@@ -4,8 +4,14 @@ import box from "../../../../assets/Icons/box.png";
 import bundle from "../../../../assets/Icons/bundle.png";
 import email from "../../../../assets/Icons/email.png";
 import BookingRemaining from "../SharedComponents/BookingRemaining";
-import OverviewCard from "./OverviewCard";
-import PieChartComponenet from "./PieChartComponenet";
+import OverviewCard from "../SharedComponents/OverviewCard";
+import PieChartComponenet from "../SharedComponents/PieChartComponenet";
+import BookingCard from "../SharedComponents/BookingCard";
+import PaymentHistoryTable from "../SharedComponents/PaymentHistoryTable";
+
+// import icon for heading.
+import booking from "../../../../assets/images/dashboard/icon/booking.png";
+import payment from "../../../../assets/images/dashboard/icon/paymentHistory.png";
 
 const Subroot = () => {
   // demo data.
@@ -30,7 +36,7 @@ const Subroot = () => {
   ];
 
   return (
-    <div className=" w-full  px-[150px]">
+    <div className=" w-full  px-[150px] pb-14">
       {/* top 3 cards. */}
       <div className="flex gap-x-[70px] justify-between  items-center">
         {/* single card. */}
@@ -46,14 +52,34 @@ const Subroot = () => {
       </div>
 
       {/* booking card. */}
-      <div>
+       {/* payment history table */}
+       <div className="font-bold text-[40px] mb-10 mt-16 flex items-center gap-x-3">
+        {" "}
+        <div className="w-[40px] bg-[#ff6f0c] h-[40px] rounded-[8px]">
+          <img className="w-[90%] h-full object-contain" src={booking} alt="" />{" "}
+        </div>{" "}
+        Bookings
+      </div>
+      <div className=" grid grid-cols-3 gap-7">
+        <BookingCard></BookingCard>
+        <BookingCard></BookingCard>
+        <BookingCard></BookingCard>
+        <BookingCard></BookingCard>
+        <BookingCard></BookingCard>
+        <BookingCard></BookingCard>
+      </div>
 
+      {/* payment history table */}
+      <div className="font-bold text-[40px] mb-10 mt-16 flex items-center gap-x-3">
+        {" "}
+        <div className="w-[40px] bg-[#ff6f0c] h-[40px] rounded-[8px]">
+          <img className="w-[90%] h-full object-contain" src={payment} alt="" />{" "}
+        </div>{" "}
+        Payment History
       </div>
 
 
-
-
-
+      <PaymentHistoryTable></PaymentHistoryTable>
     </div>
   );
 };

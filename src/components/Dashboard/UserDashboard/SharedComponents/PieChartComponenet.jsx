@@ -8,7 +8,7 @@ const PieChartComponenet = ({limit,remaining}) => {
   ];
   const COLORS = ["#FFA76A", "#CE8552"];
   return (
-    <div className="h-[450px]  p-[20px] pb-0  w-full border-[4px] border-[#FE7F29] bg-gradient-to-tr from-[#E6F7F3] to-[#FAEBE9] rounded-[23px]">
+    <div className="h-[450px]   p-[20px] pb-0  w-full border-[4px] border-[#FE7F29] bg-gradient-to-tr from-[#E6F7F3] to-[#FAEBE9] rounded-[23px]">
       <h1  className="text-[24px] font-normal ">Monthly Booking Limit</h1>
       <div className="flex justify-center items-center flex-col">
       <PieChart  width={300} height={300}>

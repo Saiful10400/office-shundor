@@ -2,7 +2,7 @@ import React from "react";
 
 const OverviewCard = ({ data }) => {
   return (
-    <div className="h-[450px] w-full border-[4px] border-[#FE7F29] bg-gradient-to-tr from-[#E6F7F3] to-[#FAEBE9] rounded-[23px]">
+    <div className="h-[450px]  w-full border-[4px] border-[#FE7F29] bg-gradient-to-tr from-[#E6F7F3] to-[#FAEBE9] rounded-[23px]">
       <h1 className="text-[24px] font-normal m-[21px]">Overview</h1>
       <div className="flex justify-center  items-center mt-10">
         <div className="grid grid-cols-2 gap-[55px] content-center ">
