@@ -12,6 +12,8 @@ import DropDown from "../../Shared_components/DropDown";
 import Input from "../../Shared_components/TextArea";
 import InputField from "../../Shared_components/InputField";
 import TextArea from "../../Shared_components/TextArea";
+import CustomDatePicker from "./SharedComponent/CustomDatePicker";
+import CustomTimePicker from "./SharedComponent/CustomTimePicker";
 
 // Function to format the slider value as time
 const formatTime = (value) => {
@@ -121,7 +123,9 @@ const PickupForm = ({
     day: "16",
   });
   const datechange = (value, context) => {
+
     const dateString = value?.$d;
+   
     let date = dateString?.toLocaleDateString("en-US", {
       weekday: "long",
       year: "numeric",
@@ -136,8 +140,9 @@ const PickupForm = ({
       const monthArray = date[1]?.split(" ");
       const day = monthArray[2];
       const month = monthArray[1];
-      setShipmentDate({ weekday, year, month, day });
+      // setShipmentDate({ weekday, year, month, day });
       updateFields({ scheduledDate: { day, month, weekday } });
+   
     }
   };
   const openModal = () => {
@@ -158,9 +163,17 @@ const PickupForm = ({
   // same as sender address.
   const [sameAsSender, setSameAsSender] = useState(false);
 
+  // time picker onaccept funciton.
+  const timeChange=(value,context)=>{
+    if(!value) return
+
+    const time=`${value?.$H}:${value?.$m}`
+    updateFields({ shipmentTime: time });
+  }
+
   return (
     <>
-      <Modal show={isModalOpen} onClose={closeModal}>
+      {/* <Modal show={isModalOpen} onClose={closeModal}>
         <LocalizationProvider dateAdapter={AdapterDayjs}>
           <StaticDatePicker
             onClose={closeModal}
@@ -168,7 +181,7 @@ const PickupForm = ({
             orientation="landscape"
           />
         </LocalizationProvider>
-      </Modal>
+      </Modal> */}
 
       <FormWrapper title="Pickup Details">
         <div className="font-medium my-4 mt-6 text-3xl">
@@ -258,7 +271,7 @@ const PickupForm = ({
             <div className="text-xl font-semibold mb-3 range-title">
               I am sending my shipment on
             </div>
-            <div className="flex items-center justify-between range-container">
+            {/* <div className="flex items-center justify-between range-container">
               <div className="flex flex-col items-center">
                 <div className="font-medium">{shipmentDate.month}</div>
                 <div className="text-3xl font-medium">{shipmentDate.day}</div>
@@ -295,7 +308,20 @@ const PickupForm = ({
                   </div>
                 </Box>
               </div>
+            </div> */}
+
+
+            <div className="flex gap-x-[46px] justify-center items-center">
+            <CustomDatePicker placeholder={"Shipment Date"} onAccept={datechange}></CustomDatePicker>
+            <CustomTimePicker placeholder={"From Time"} onAccept={timeChange}></CustomTimePicker>
+            <CustomTimePicker placeholder={"To Time"} onAccept={timeChange}></CustomTimePicker>
             </div>
+
+
+
+
+
+
           </div>
 
           <div className=" mb-10 p-2">
