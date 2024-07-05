@@ -12,6 +12,7 @@ import PaymentHistoryTable from "../SharedComponents/PaymentHistoryTable";
 // import icon for heading.
 import booking from "../../../../assets/images/dashboard/icon/booking.png";
 import payment from "../../../../assets/images/dashboard/icon/paymentHistory.png";
+import ProgressBar from "../UserSubComponent/ProgressBar";
 
 const UserSubRoot = () => {
   // demo data.
@@ -53,7 +54,7 @@ const UserSubRoot = () => {
 
       {/* booking card. */}
        {/* payment history table */}
-       <div className="font-bold text-[40px] mb-10 mt-16 flex items-center gap-x-3">
+       {/* <div className="font-bold text-[40px] mb-10 mt-16 flex items-center gap-x-3">
         {" "}
         <div className="w-[40px] bg-[#ff6f0c] h-[40px] rounded-[8px]">
           <img className="w-[90%] h-full object-contain" src={booking} alt="" />{" "}
@@ -67,7 +68,28 @@ const UserSubRoot = () => {
         <BookingCard></BookingCard>
         <BookingCard></BookingCard>
         <BookingCard></BookingCard>
+      </div> */}
+
+
+{/*  */}
+<div className="font-bold text-[40px] mb-10 mt-16 flex items-center gap-x-3">
+        {" "}
+        
+        Timeline
       </div>
+
+<div className="my-[100px]">
+<ProgressBar></ProgressBar>
+</div>
+
+
+
+
+
+
+
+
+
 
       {/* payment history table */}
       <div className="font-bold text-[40px] mb-10 mt-16 flex items-center gap-x-3">
